@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firstrare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER (struktur ala UPI: bar atas + menu dropdown) ================= -->
+  <header>
+    <div class="top">
+      <div class="wrap">
+        <span>Gratis ongkir min. belanja Rp200.000</span>
+        <div class="top-r">
+          <a href="#">ID</a> | <a href="#">EN</a>
+          <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a>
+          <a href="#">Unduh Aplikasi</a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="wrap">
+        <a href="#" class="logo"><b>Kristal</b> Mode</a>
+        <nav>
+          <a href="#">Beranda</a>
+          <div class="dd"><a href="#">Produk ▾</a>
+            <div class="dd-m"><a href="#">Pria</a><a href="#">Wanita</a><a href="#">Anak</a><a href="#">Aksesoris</a>
+            </div>
+          </div>
+          <div class="dd"><a href="#">Koleksi ▾</a>
+            <div class="dd-m"><a href="#">Terbaru</a><a href="#">Terlaris</a><a href="#">Musim Ini</a></div>
+          </div>
+          <a href="#promo">Promo</a>
+          <div class="dd"><a href="#">Tentang ▾</a>
+            <div class="dd-m"><a href="#">Profil Toko</a><a href="#">Cara Belanja</a><a href="#">Hubungi Kami</a></div>
+          </div>
+        </nav>
+        <form class="search" onsubmit="return false">
+          <input type="search" placeholder="Cari kemeja, dress, jaket…" aria-label="Cari produk">
+          <button>Cari</button>
+        </form>
+        <a href="#" class="cart">Keranjang <span>3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ================= BODY (gaya ala Shopee) ================= -->
+
+    <!-- Banner utama: ganti background lewat style.css (.hero-main, .hero-s1, .hero-s2) -->
+    <section class="hero">
+      <div class="hero-main">
+        <h1>Tampil Percaya Diri Setiap Hari</h1>
+        <p>Koleksi baju terbaru dengan bahan nyaman dan harga bersahabat.</p>
+        <a href="#rekomendasi" class="btn">Belanja Sekarang</a>
+      </div>
+      <div class="hero-s hero-s1"><b>Diskon s.d. 50%</b><span>Koleksi Pria</span></div>
+      <div class="hero-s hero-s2"><b>Baru Tiba</b><span>Koleksi Wanita</span></div>
+    </section>
+
+    <!-- Layanan toko -->
+    <section class="svc">
+      <div>🚚 Gratis Ongkir</div>
+      <div>💵 Bayar di Tempat (COD)</div>
+      <div>↩️ Retur 7 Hari</div>
+      <div>✅ Barang Original</div>
+    </section>
+
+    <!-- Kategori: ganti emoji dengan <img src="images/kat-1.png"> kalau mau pakai foto -->
+    <section class="box">
+      <h2>Kategori</h2>
+      <div class="cats">
+        <a href="#"><i>👕</i>Kaos</a><a href="#"><i>👔</i>Kemeja</a><a href="#"><i>👖</i>Celana</a><a
+          href="#"><i>👗</i>Dress</a><a href="#"><i>🧥</i>Jaket</a>
+        <a href="#"><i>🧶</i>Sweater</a><a href="#"><i>👟</i>Sepatu</a><a href="#"><i>👜</i>Tas</a><a
+          href="#"><i>🧢</i>Topi</a><a href="#"><i>👶</i>Anak</a>
+      </div>
+    </section>
+
+    <!-- Flash sale -->
+    <section class="box" id="promo">
+      <div class="fs-h">
+        <h2 class="fs">⚡ FLASH SALE</h2>
+        <div class="cd"><b>02</b>:<b>45</b>:<b>18</b></div><a href="#">Lihat semua ›</a>
+      </div>
+      <div class="grid g6">
+        <!-- GANTI FOTO: isi src dengan nama file di folder images/ -->
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/flash-1.jpg" alt="Kaos Oversize Hitam" onerror="this.remove()"><span
+                class="disc">-40%</span></div>
+            <h3>Kaos Oversize Hitam</h3>
+            <p class="price"><b>Rp59.000</b></p>
+            <div class="bar"><i style="width:82%"></i><span>Terjual 164</span></div>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/flash-2.jpg" alt="Kemeja Flanel Kotak" onerror="this.remove()"><span
+                class="disc">-35%</span></div>
+            <h3>Kemeja Flanel Kotak</h3>
+            <p class="price"><b>Rp99.000</b></p>
+            <div class="bar"><i style="width:64%"></i><span>Terjual 96</span></div>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/flash-3.jpg" alt="Celana Chino Krem" onerror="this.remove()"><span
+                class="disc">-30%</span></div>
+            <h3>Celana Chino Krem</h3>
+            <p class="price"><b>Rp139.000</b></p>
+            <div class="bar"><i style="width:48%"></i><span>Terjual 72</span></div>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/flash-4.jpg" alt="Dress Floral Midi" onerror="this.remove()"><span
+                class="disc">-45%</span></div>
+            <h3>Dress Floral Midi</h3>
+            <p class="price"><b>Rp119.000</b></p>
+            <div class="bar"><i style="width:90%"></i><span>Terjual 210</span></div>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/flash-5.jpg" alt="Jaket Denim" onerror="this.remove()"><span
+                class="disc">-25%</span></div>
+            <h3>Jaket Denim Biru</h3>
+            <p class="price"><b>Rp189.000</b></p>
+            <div class="bar"><i style="width:35%"></i><span>Terjual 41</span></div>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/flash-6.jpg" alt="Sweater Rajut" onerror="this.remove()"><span
+                class="disc">-38%</span></div>
+            <h3>Sweater Rajut Lembut</h3>
+            <p class="price"><b>Rp109.000</b></p>
+            <div class="bar"><i style="width:70%"></i><span>Terjual 118</span></div>
+          </a></article>
+      </div>
+    </section>
+
+    <!-- Rekomendasi -->
+    <section id="rekomendasi">
+      <h2 class="rec">Rekomendasi Untukmu</h2>
+      <div class="grid g6">
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-1.jpg" alt="Kemeja Linen Putih" onerror="this.remove()"><span
+                class="disc">-30%</span></div>
+            <h3>Kemeja Linen Putih Lengan Panjang</h3>
+            <p class="price"><b>Rp129.000</b> <s>Rp185.000</s></p>
+            <p class="meta">★ 4,9 · 2,3rb terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-2.jpg" alt="Kaos Polos" onerror="this.remove()"></div>
+            <h3>Kaos Polos Cotton Combed 30s</h3>
+            <p class="price"><b>Rp49.000</b></p>
+            <p class="meta">★ 4,8 · 5,1rb terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-3.jpg" alt="Celana Jeans" onerror="this.remove()"><span
+                class="disc">-20%</span></div>
+            <h3>Celana Jeans Slim Fit Pria</h3>
+            <p class="price"><b>Rp159.000</b> <s>Rp199.000</s></p>
+            <p class="meta">★ 4,7 · 1,4rb terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-4.jpg" alt="Blouse" onerror="this.remove()"></div>
+            <h3>Blouse Wanita Katun Premium</h3>
+            <p class="price"><b>Rp89.000</b></p>
+            <p class="meta">★ 4,9 · 980 terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-5.jpg" alt="Hoodie" onerror="this.remove()"><span
+                class="disc">-15%</span></div>
+            <h3>Hoodie Fleece Unisex</h3>
+            <p class="price"><b>Rp149.000</b> <s>Rp175.000</s></p>
+            <p class="meta">★ 4,8 · 3,2rb terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-6.jpg" alt="Rok" onerror="this.remove()"></div>
+            <h3>Rok Plisket Panjang</h3>
+            <p class="price"><b>Rp79.000</b></p>
+            <p class="meta">★ 4,6 · 760 terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-7.jpg" alt="Sneakers" onerror="this.remove()"><span
+                class="disc">-10%</span></div>
+            <h3>Sneakers Putih Casual</h3>
+            <p class="price"><b>Rp215.000</b> <s>Rp239.000</s></p>
+            <p class="meta">★ 4,8 · 1,9rb terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-8.jpg" alt="Tas" onerror="this.remove()"></div>
+            <h3>Tas Selempang Kanvas</h3>
+            <p class="price"><b>Rp99.000</b></p>
+            <p class="meta">★ 4,7 · 1,1rb terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-9.jpg" alt="Jaket" onerror="this.remove()"><span
+                class="disc">-25%</span></div>
+            <h3>Jaket Bomber Hitam</h3>
+            <p class="price"><b>Rp179.000</b> <s>Rp239.000</s></p>
+            <p class="meta">★ 4,8 · 870 terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-10.jpg" alt="Dress" onerror="this.remove()"></div>
+            <h3>Dress Satin Elegan</h3>
+            <p class="price"><b>Rp169.000</b></p>
+            <p class="meta">★ 4,9 · 640 terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-11.jpg" alt="Topi" onerror="this.remove()"></div>
+            <h3>Topi Baseball Polos</h3>
+            <p class="price"><b>Rp35.000</b></p>
+            <p class="meta">★ 4,7 · 2,7rb terjual</p>
+          </a></article>
+        <article class="card"><a href="#">
+            <div class="ph"><img src="images/produk-12.jpg" alt="Baju anak" onerror="this.remove()"><span
+                class="disc">-20%</span></div>
+            <h3>Setelan Anak Katun</h3>
+            <p class="price"><b>Rp75.000</b> <s>Rp94.000</s></p>
+            <p class="meta">★ 4,9 · 1,5rb terjual</p>
+          </a></article>
+      </div>
+      <div class="more"><a href="#" class="btn out">Lihat Lainnya</a></div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (kolom ala Lazada) ================= -->
+  <footer>
+    <div class="wrap fcols">
+      <div>
+        <h4>Layanan Pelanggan</h4><a href="#">Pusat Bantuan</a><a href="#">Cara Pembelian</a><a
+          href="#">Pengiriman</a><a href="#">Pengembalian Barang</a><a href="#">Hubungi Kami</a>
+      </div>
+      <div>
+        <h4>Kristal Mode</h4><a href="#">Tentang Kami</a><a href="#">Karier</a><a href="#">Blog</a><a href="#">Kebijakan
+          Privasi</a><a href="#">Syarat &amp; Ketentuan</a>
+      </div>
+      <div>
+        <h4>Pembayaran</h4>
+        <p class="chips"><span>Transfer Bank</span><span>QRIS</span><span>COD</span><span>Kartu
+            Kredit</span><span>E-Wallet</span></p>
+        <h4>Pengiriman</h4>
+        <p class="chips"><span>JNE</span><span>J&amp;T</span><span>SiCepat</span><span>Anteraja</span></p>
+      </div>
+      <div>
+        <h4>Ikuti Kami</h4>
+        <p class="chips"><span>Instagram</span><span>TikTok</span><span>YouTube</span><span>Facebook</span></p>
+        <h4>Unduh Aplikasi</h4>
+        <p class="chips"><span>App Store</span><span>Google Play</span></p>
+      </div>
+    </div>
+    <div class="wrap fb">
+      <p><b>Kristal Mode</b> — toko baju online dengan koleksi pria, wanita, dan anak. Belanja mudah, aman, dan cepat
+        sampai.</p>
+      <p>Jl. Contoh No. 1, Bandung, Jawa Barat · hello@kristalmode.id · 0812-0000-0000</p>
+      <p class="cp">© 2026 Kristal Mode. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
